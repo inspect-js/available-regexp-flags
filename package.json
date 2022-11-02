@@ -55,7 +55,7 @@
 		"aud": "^2.0.1",
 		"auto-changelog": "^2.4.0",
 		"eslint": "=8.8.0",
-		"foreach": "^2.0.6",
+		"for-each": "^0.3.3",
 		"in-publish": "^2.0.1",
 		"isarray": "^2.0.5",
 		"nyc": "^10.3.2",

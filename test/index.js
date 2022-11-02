@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var isArray = require('isarray');
-var forEach = require('foreach');
+var forEach = require('for-each');
 
 var flags = require('../');
 var properties = require('../properties');
