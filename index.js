@@ -1,14 +1,12 @@
 'use strict';
 
-var callBound = require('call-bind/callBound');
 var GetIntrinsic = require('get-intrinsic');
 
-var $concat = callBound('Array.prototype.concat');
+var safeConcat = require('safe-array-concat');
 
 var $RegExpPrototype = GetIntrinsic('%RegExp.prototype%');
 
-module.exports = $concat(
-	[],
+module.exports = safeConcat(
 	'hasIndices' in $RegExpPrototype ? 'd' : [],
 	'g',
 	'i',

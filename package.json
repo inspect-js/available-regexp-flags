@@ -48,9 +48,9 @@
 	},
 	"homepage": "https://github.com/inspect-js/available-regexp-flags#readme",
 	"dependencies": {
-		"call-bind": "^1.0.2",
 		"get-intrinsic": "^1.2.0",
-		"has-proto": "^1.0.1"
+		"has-proto": "^1.0.1",
+		"safe-array-concat": "^1.0.0"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.0.1",
