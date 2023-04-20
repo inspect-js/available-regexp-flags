@@ -1,6 +1,6 @@
 {
 	"name": "available-regexp-flags",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Which regular expression flags does the current environment support?",
 	"main": "index.js",
 	"exports": {

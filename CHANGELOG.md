@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/inspect-js/available-regexp-flags/compare/v1.0.1...v1.0.2) - 2023-04-20
+
+### Commits
+
+- [Refactor] use `safe-array-concat` [`6e53889`](https://github.com/inspect-js/available-regexp-flags/commit/6e538898849f15848782d90b7057a7d31ca5fffa)
+
 ## [v1.0.1](https://github.com/inspect-js/available-regexp-flags/compare/v1.0.0...v1.0.1) - 2023-03-03
 
 ### Commits
