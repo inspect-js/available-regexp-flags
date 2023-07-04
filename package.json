@@ -48,7 +48,7 @@
 	},
 	"homepage": "https://github.com/inspect-js/available-regexp-flags#readme",
 	"dependencies": {
-		"get-intrinsic": "^1.2.0",
+		"get-intrinsic": "^1.2.1",
 		"has-proto": "^1.0.1",
 		"safe-array-concat": "^1.0.0"
 	},
