@@ -1,18 +1,16 @@
 'use strict';
 
-var GetIntrinsic = require('get-intrinsic');
-
 var safeConcat = require('safe-array-concat');
 
-var $RegExpPrototype = GetIntrinsic('%RegExp.prototype%');
+var re = /a/;
 
 module.exports = safeConcat(
-	'hasIndices' in $RegExpPrototype ? 'd' : [],
+	'hasIndices' in re ? 'd' : [],
 	'g',
 	'i',
 	'm',
-	'dotAll' in $RegExpPrototype ? 's' : [],
-	'unicode' in $RegExpPrototype ? 'u' : [],
-	'unicodeSets' in $RegExpPrototype ? 'v' : [],
-	'sticky' in $RegExpPrototype ? 'y' : []
+	'dotAll' in re ? 's' : [],
+	'unicode' in re ? 'u' : [],
+	'unicodeSets' in re ? 'v' : [],
+	'sticky' in re ? 'y' : []
 );
