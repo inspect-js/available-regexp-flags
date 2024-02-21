@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.4](https://github.com/inspect-js/available-regexp-flags/compare/v1.0.3...v1.0.4) - 2024-02-21
+
+### Commits
+
+- [types] fix omission of `v` flag [`81a2875`](https://github.com/inspect-js/available-regexp-flags/commit/81a2875080f67cd3f29512f7f49fd0f643ea0e50)
+
 ## [v1.0.3](https://github.com/inspect-js/available-regexp-flags/compare/v1.0.2...v1.0.3) - 2024-02-21
 
 ### Commits
