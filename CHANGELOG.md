@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/inspect-js/available-regexp-flags/compare/v1.0.2...v1.0.3) - 2024-02-21
+
+### Commits
+
+- add types [`7c1f6ac`](https://github.com/inspect-js/available-regexp-flags/commit/7c1f6ac3c13be3bed2621ac26b0180356e371073)
+- [Refactor] remove `get-intrinsic` [`d940026`](https://github.com/inspect-js/available-regexp-flags/commit/d940026e8432556a269906f54b60bcf501fdd22f)
+- [Deps] update `get-intrinsic`, `has-proto`, `safe-array-concat` [`c37e7f4`](https://github.com/inspect-js/available-regexp-flags/commit/c37e7f4f82ff4d51d8a3e771e828329d5eeac44c)
+- [Dev Deps] update `aud`, `npmignore`, `tape` [`674b2c4`](https://github.com/inspect-js/available-regexp-flags/commit/674b2c42481f056bc0a3931c33c8352330c513a5)
+- [Dev Deps] update `@ljharb/eslint-config`, `aud`, `tape` [`6a52504`](https://github.com/inspect-js/available-regexp-flags/commit/6a52504820f8215374339d546b892850365ca439)
+- [readme] remove dead badges [`de7b600`](https://github.com/inspect-js/available-regexp-flags/commit/de7b6006d32fc6d773ba6b9b18b47c2889cb193c)
+- [Deps] update `get-intrinsic` [`85cc285`](https://github.com/inspect-js/available-regexp-flags/commit/85cc2854292c0ef72d743ce5bf90da8c3530b230)
+- [meta] add `sideEffects` flag [`8e57b4b`](https://github.com/inspect-js/available-regexp-flags/commit/8e57b4b3699c68a66b568769121e5a629df2348a)
+
 ## [v1.0.2](https://github.com/inspect-js/available-regexp-flags/compare/v1.0.1...v1.0.2) - 2023-04-20
 
 ### Commits
