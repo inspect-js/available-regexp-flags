@@ -2,6 +2,7 @@
 
 var hasProto = require('has-proto')();
 
+/** @type {import('./properties')} */
 module.exports = {
 	__proto__: null,
 	d: 'hasIndices',

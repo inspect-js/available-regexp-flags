@@ -7,6 +7,7 @@ var forEach = require('for-each');
 var flags = require('../');
 var properties = require('../properties');
 
+/** @type {(flag: import('../')[number]) => RegExp} */
 function makeRegex(flag) { // eslint-disable-line func-style
 	return Function('return /a/' + flag)(); // eslint-disable-line no-new-func
 }
@@ -47,11 +48,16 @@ test('properties', function (t) {
 			st.ok(property in r, property + ' is present in a regex with flag ' + flag);
 			st.ok(r[property], property + ' is true in a regex with flag ' + flag);
 
-			forEach(properties, function (p, f) {
-				if (p !== property) {
-					st.notOk(r[p], p + ' is false in a regex without flag ' + f);
+			forEach(
+				// @ts-expect-error FIXME: no idea why TS can't handle this one
+				properties,
+				/** @type {<T extends Exclude<keyof properties, '__proto__'>>(p: typeof property, f: T) => void} */
+				function (p, f) {
+					if (p !== property) {
+						st.notOk(r[p], p + ' is false in a regex without flag ' + f);
+					}
 				}
-			});
+			);
 
 			st.end();
 		});

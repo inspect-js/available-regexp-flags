@@ -4,6 +4,7 @@ var safeConcat = require('safe-array-concat');
 
 var re = /a/;
 
+/** @type {import('.')} */
 module.exports = safeConcat(
 	'hasIndices' in re ? 'd' : [],
 	'g',
