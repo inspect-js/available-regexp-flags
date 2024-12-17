@@ -46,7 +46,6 @@ test('properties', function (t) {
 			var r = new RegExp('a', flag);
 
 			st.ok(property in r, property + ' is present in a regex with flag ' + flag);
-			// @ts-expect-error TS doesn't know about all the accessors yet
 			st.ok(r[property], property + ' is true in a regex with flag ' + flag);
 
 			forEach(
@@ -55,7 +54,6 @@ test('properties', function (t) {
 				/** @type {<T extends Exclude<keyof properties, '__proto__'>>(p: typeof property, f: T) => void} */
 				function (p, f) {
 					if (p !== property) {
-						// @ts-expect-error TS doesn't know about all the accessors yet
 						st.notOk(r[p], p + ' is false in a regex without flag ' + f);
 					}
 				}
