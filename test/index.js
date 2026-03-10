@@ -48,8 +48,8 @@ test('properties', function (t) {
 			st.ok(property in r, property + ' is present in a regex with flag ' + flag);
 			st.ok(r[property], property + ' is true in a regex with flag ' + flag);
 
+			// @ts-expect-error FIXME: no idea why TS can't handle this one
 			forEach(
-				// @ts-expect-error FIXME: no idea why TS can't handle this one
 				properties,
 				/** @type {<T extends Exclude<keyof properties, '__proto__'>>(p: typeof property, f: T) => void} */
 				function (p, f) {
